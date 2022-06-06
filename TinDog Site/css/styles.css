@@ -4,32 +4,12 @@
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
 }
-.bg-dark {
-  background-color: #2d6e7e !important;
-}
-.navbar-brand {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 2rem;
-  font-weight: bold;
-}
+
+/* * IDs * */
+
 #title {
   background-color: #2d6e7e;
   color: white;
-}
-.container {
-  padding: 0 32px;
-}
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-.fa-solid {
-  font-size: 70px;
-  color: #2d6e7e;
-}
-.fa-solid:hover {
-  color: #245764;
 }
 #features h3 {
   font-weight: bold;
@@ -39,18 +19,9 @@ h1 {
   background-color: #2d6e7e;
   color: white;
 }
-.test-img {
-  width: 10%;
-  border-radius: 50%;
-  margin: 16px 8px;
-}
 #press {
   background-color: #2d6e7e;
   padding-bottom: 5%;
-}
-.press-img {
-  width: 15%;
-  padding: 1%;
 }
 #BI {
   filter: invert(100%);
@@ -58,24 +29,7 @@ h1 {
 #carousel {
   cursor: pointer;
 }
-.card{
-  margin: 32px 16px;
-}
-
-/* utility classes */
-.btn-color{
-  background-color: #2d6e7e;
-  color: #fff;
-}
-.btn-color:hover{
-  background-color: #245764;
-  color: #fff;
-}
-.card-header{
-  background-color: #2d6e7e;
-  color: #fff;
-}
-#cta{
+#cta {
   background-color: #2d6e7e;
   color: #fff;
   width: 100%;
@@ -85,15 +39,71 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.bottom-text{
+#footer .fa-brands {
+  padding: 2% 0.3%;
+}
+#footer .fa-solid {
+  padding: 2% 0.3%;
+  color: black;
+}
+
+/* * Classes * */
+
+.bg-dark {
+  background-color: #2d6e7e !important;
+}
+.navbar-brand {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.container {
+  padding: 0 32px;
+}
+.fa-solid {
+  font-size: 70px;
+  color: #2d6e7e;
+}
+.fa-solid:hover {
+  color: #245764;
+}
+.test-img {
+  width: 10%;
+  border-radius: 50%;
+  margin: 16px 8px;
+}
+.press-img {
+  width: 15%;
+  padding: 1%;
+}
+.card {
+  margin: 32px 16px;
+}
+.card-header {
+  background-color: #2d6e7e;
+  color: #fff;
+}
+.cta-heading {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   line-height: 1.5;
 }
-#footer .fa-brands{
-  padding: 2% .3%;
+
+/* * HTML Tags * */
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
 }
-#footer .fa-solid{
-  padding: 2% .3%;
-  color: black;
+
+/* * Utility Classes * */
+
+.btn-color {
+  background-color: #2d6e7e;
+  color: #fff;
+}
+.btn-color:hover {
+  background-color: #245764;
+  color: #fff;
 }

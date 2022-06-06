@@ -11,10 +11,12 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- External CSS -->
   <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap"
     rel="stylesheet">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,7 +30,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">tindog</a>
+        <a class="navbar-brand" href="./index.html">tindog</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,13 +38,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Contact</a>
+              <a class="nav-link lead" aria-current="page" href="#footer">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link lead" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Download</a>
+              <a class="nav-link lead" href="#cta">Download</a>
             </li>
         </div>
       </div>
@@ -51,6 +53,7 @@
   </section>
 
   <!-- Title -->
+
   <section id="title">
 
     <div class="container">
@@ -69,8 +72,8 @@
 
   </section>
 
-
   <!-- Features -->
+
   <section class="container my-5" id="features">
 
     <div class="row text-center">
@@ -93,8 +96,8 @@
 
   </section>
 
-
   <!-- Testimonials -->
+
   <section class="text-center" id="testimonials">
 
     <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
@@ -121,8 +124,8 @@
 
   </section>
 
-
   <!-- Press -->
+
   <section class="text-center" id="press">
 
     <img class="press-img" src="images/techcrunch.png" alt="tc-logo">
@@ -132,8 +135,8 @@
 
   </section>
 
-
   <!-- Pricing -->
+
   <section class="my-5 text-center" id="pricing">
 
     <h2>A Plan for Every Dog's Needs</h2>
@@ -157,53 +160,52 @@
           </div>
         </div>
 
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card">
-              <div class="card-header">
-                Labrador
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">$49 / mo</h5>
-                <p>Unlimited Matches</p>
-                <p>Unlimited Messages</p>
-                <p>Unlimited App Usage</p>
-                <a href="#" class="btn-color btn d-block">Sign Up</a>
-              </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              Labrador
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">$49 / mo</h5>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <a href="#" class="btn-color btn d-block">Sign Up</a>
             </div>
           </div>
+        </div>
 
-          <div class="col-12 col-md-12 col-lg-4">
-            <div class="card">
-              <div class="card-header">
-                Mastiff
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">$99 / mo</h5>
-                <p>Pirority Listing</p>
-                <p>Unlimited Matches</p>
-                <p>Unlimited App Usage</p>
-                <a href="#" class="btn-color btn d-block">Sign Up</a>
-              </div>
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              Mastiff
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">$99 / mo</h5>
+              <p>Pirority Listing</p>
+              <p>Unlimited Matches</p>
+              <p>Unlimited App Usage</p>
+              <a href="#" class="btn-color btn d-block">Sign Up</a>
             </div>
           </div>
         </div>
-        </div>
+      </div>
+    </div>
+
   </section>
-
 
   <!-- Call to Action -->
 
   <section id="cta">
 
-<div class="text-center w-50">
-  <h3 class="bottom-text">Find the True Love of Your Dog's Life Today.</h3>
-  <button type="button" class="btn btn-dark mt-3 me-3"><i class="fa-brands fa-apple"></i> Download</button>
-  <button type="button" class="btn btn-outline-light mt-3 "><i class="fa-brands fa-google-play"></i>
-    Download</button>
-</div>
+    <div class="text-center w-50">
+      <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+      <button type="button" class="btn btn-dark mt-3 me-3"><i class="fa-brands fa-apple"></i> Download</button>
+      <button type="button" class="btn btn-outline-light mt-3 "><i class="fa-brands fa-google-play"></i>
+        Download</button>
+    </div>
 
   </section>
-
 
   <!-- Footer -->
 
