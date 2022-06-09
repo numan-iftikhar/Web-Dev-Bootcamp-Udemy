@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import TodoItem from "./components/TodoItem";
 
 function App() {
+  // TODO: Clear text field after entering the todo
+  const [inputText, setInputText] = useState("");
+  const [todos, setTodos] = useState([]);
+
+  function handleChange(event) {
+    let newText = event.target.value;
+    setInputText(newText);
+  }
+
+  function addTodo() {
+    setTodos((prevTodos)=> [...prevTodos, inputText]);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="heading">
+        <h1>To-Do List</h1>
+      </div>
+      <div className="form">
+        <input onChange={handleChange} type="text" />
+        <button onClick={addTodo}>
+          <span>Add</span>
+        </button>
+      </div>
+      <div>
+        <ul>
+          {todos.map((todoItem) => {
+            return <TodoItem
+            text={todoItem}
+            />
+          })}
+        </ul>
+      </div>
     </div>
   );
 }
