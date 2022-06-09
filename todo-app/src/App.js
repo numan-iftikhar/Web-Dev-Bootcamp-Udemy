@@ -1,17 +1,12 @@
 import React, { useState } from "react";
+import InputArea from "./components/InputArea";
 import TodoItem from "./components/TodoItem";
 
 function App() {
   // TODO: Clear text field after entering the todo
-  const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
 
-  function handleChange(event) {
-    let newText = event.target.value;
-    setInputText(newText);
-  }
-
-  function addTodo() {
+  function addTodo(inputText) {
     setTodos((prevTodos) => [...prevTodos, inputText]);
   }
 
@@ -28,12 +23,8 @@ function App() {
       <div className="heading">
         <h1>To-Do List</h1>
       </div>
-      <div className="form">
-        <input onChange={handleChange} type="text" />
-        <button onClick={addTodo}>
-          <span>Add</span>
-        </button>
-      </div>
+      <InputArea 
+      addTodo={addTodo}/>
       <div>
         <ul>
           {todos.map((todoItem, index) => {
