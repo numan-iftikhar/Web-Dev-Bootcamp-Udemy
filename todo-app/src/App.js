@@ -12,7 +12,15 @@ function App() {
   }
 
   function addTodo() {
-    setTodos((prevTodos)=> [...prevTodos, inputText]);
+    setTodos((prevTodos) => [...prevTodos, inputText]);
+  }
+
+  function deleteItem(id) {
+    setTodos((prevTodos) => {
+      return prevTodos.filter((todo, index) => {
+        return index !== id;
+      });
+    });
   }
 
   return (
@@ -28,10 +36,15 @@ function App() {
       </div>
       <div>
         <ul>
-          {todos.map((todoItem) => {
-            return <TodoItem
-            text={todoItem}
-            />
+          {todos.map((todoItem, index) => {
+            return (
+              <TodoItem
+                key={index}
+                id={index}
+                text={todoItem}
+                checked={deleteItem}
+              />
+            );
           })}
         </ul>
       </div>
